@@ -591,13 +591,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Skill Bar Animations
     function initializeSkillAnimations() {
+        // Reset all skill bars to 0 width
         const skillBars = document.querySelectorAll('.skill-level');
         skillBars.forEach(bar => {
             bar.style.width = '0%';
-            setTimeout(() => {
-                const width = bar.style.width;
-                bar.style.width = width;
-            }, 500);
+        });
+
+        // Animate skill bars when they come into view
+        const skillItems = document.querySelectorAll('.skill-item');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillLevel = entry.target.querySelector('.skill-level');
+                    if (skillLevel) {
+                        // Get the width from inline style
+                        const targetWidth = skillLevel.getAttribute('style')?.match(/width:\s*(\d+)%/);
+                        if (targetWidth && targetWidth[1]) {
+                            // Reset to 0 then animate to target
+                            skillLevel.style.transition = 'width 1.5s ease-in-out';
+                            setTimeout(() => {
+                                skillLevel.style.width = targetWidth[1] + '%';
+                            }, 100);
+                        }
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '0px 0px -100px 0px'
+        });
+
+        // Observe each skill item
+        skillItems.forEach(item => {
+            observer.observe(item);
         });
     }
 
