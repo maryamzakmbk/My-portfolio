@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryam Al Mobarak - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header with Navigation -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">Maryam Al Mobarak</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#github">GitHub Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+                <div class="visitor-counter" id="visitorCounter">
+                    <span>👤</span>
+                    <span id="visitCount">0</span>
+                </div>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 id="greeting">Hello, I'm Maryam Al Mobarak</h1>
+            <p class="tagline">Software Engineer | KFUPM Graduate</p>
+            <p class="intro">Passionate about building impactful software solutions with focus on performance, usability, and clean code</p>
+            <div class="hero-contact-info">
+                <p>📧 marzakmbk10@gmail.com | 📱 +966 570 870 026 | 📍 Safwa, Saudi Arabia</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#github" class="btn btn-primary">View GitHub Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>Professional Summary</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <div class="summary-card">
+                    <p>Software Engineer with strong experience in Python, Java, and SQL, and practical skills in React, Node.js, and GitHub. Skilled in designing, developing, and optimizing programming applications with a focus on performance, usability, and clean code. Demonstrated ability to solve complex technical problems, collaborate effectively across teams, and adapt quickly to new technologies. Passionate about building impactful software solutions and continuing to grow technically.</p>
+                </div>
+
+                <div class="education-card">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>Bachelor of Science in Software Engineering</h4>
+                        <p class="institution">King Fahd University of Petroleum & Minerals (KFUPM)</p>
+                        <p class="education-period">2022 - Present</p>
+                        <p class="education-details">Computing & Mathematics Department</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-img">
+                <img src="assets/profilePic.jpeg" alt="Maryam Al Mobarak - Software Engineer" loading="lazy">
+                <div class="contact-badges">
+                    <a href="mailto:marzakmbk10@gmail.com" class="contact-badge">📧 Email</a>
+                    <a href="tel:+966570870026" class="contact-badge">📱 Call</a>
+                    <a href="https://www.linkedin.com/in/maryam-al-mobarak-203873233" target="_blank" class="contact-badge">💼 LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Work Experience Section -->
+<section id="experience" class="experience">
+    <div class="container">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-content">
+                    <h3>Graphic Designer</h3>
+                    <p class="timeline-subtitle">Art Club, SEP Club, CHE Club, CIE Club | KFUPM</p>
+                    <ul>
+                        <li>Designing posters and advertisements for various university clubs</li>
+                        <li>Creating content for events and all staff design requirements</li>
+                        <li>Collaborating with multiple student organizations on visual content</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GitHub Projects Section -->
+<section id="github" class="github">
+    <div class="container">
+        <h2>My GitHub Repositories</h2>
+        <div class="github-stats" id="githubStats">
+            <!-- GitHub stats will be populated by JavaScript -->
+        </div>
+        <div class="repos-grid" id="reposGrid">
+            <!-- GitHub repositories will be populated by JavaScript -->
+        </div>
+        <div class="github-loading" id="githubLoading">
+            <p>Loading GitHub repositories...</p>
+        </div>
+        <div class="github-error" id="githubError" style="display: none;">
+            <p>Unable to load GitHub repositories at this time. Please check back later.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2>Technical Skills & Certifications</h2>
+
+        <div class="skills-container">
+            <!-- Programming Languages -->
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C#</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="skills-category">
+                <h3>Technical Expertise</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Object Oriented Programming</span>
+                    <span class="skill-tag">Data Structures</span>
+                    <span class="skill-tag">UI Design</span>
+                    <span class="skill-tag">Software Design</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-category">
+                <h3>Professional Skills</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag soft">Team Work</span>
+                    <span class="skill-tag soft">Leadership</span>
+                    <span class="skill-tag soft">Problem Solving</span>
+                    <span class="skill-tag soft">Project Management</span>
+                    <span class="skill-tag soft">Communication</span>
+                    <span class="skill-tag soft">Adaptability</span>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <div class="certification-cards">
+                    <div class="certification-card">
+                        <h4>UI Design Course</h4>
+                        <p class="cert-issuer">Nmkkn</p>
+                        <p class="cert-date">2025</p>
+                    </div>
+                    <div class="certification-card">
+                        <h4>C++ Programming</h4>
+                        <p class="cert-issuer">Microsoft | Coursera</p>
+                        <p class="cert-date">2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Connect!</h3>
+                <p>I'm currently seeking new opportunities and collaborations in software engineering.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:marzakmbk10@gmail.com" class="contact-value">marzakmbk10@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <p class="contact-label">Phone</p>
+                            <a href="tel:+966570870026" class="contact-value">+966 570 870 026</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <p class="contact-label">Location</p>
+                            <p class="contact-value">Safwa, Eastern Region, Saudi Arabia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <div>
+                            <p class="contact-label">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/maryam-al-mobarak-203873233" target="_blank" class="contact-value">maryam-al-mobarak-203873233</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reference-note">
+                    <h4>References</h4>
+                    <p>Available upon request</p>
+                </div>
+
+                <div class="contact-analytics">
+                    <h4>Site Analytics</h4>
+                    <div class="analytics-grid">
+                        <div class="analytics-item">
+                            <span class="analytics-value" id="totalVisits">0</span>
+                            <span class="analytics-label">Total Visits</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value" id="currentVisitTime">0s</span>
+                            <span class="analytics-label">Current Visit</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value" id="projectsViewed">0</span>
+                            <span class="analytics-label">Projects Viewed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="freelance">Freelance Project</option>
+                        <option value="internship">Internship</option>
+                        <option value="question">Technical Question</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company/Organization</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or opportunity..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <p class="form-note">Messages will be sent securely to marzakmbk10@gmail.com</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Maryam Al Mobarak</h3>
+                <p>Software Engineer | KFUPM</p>
+                <p class="footer-contact">marzakmbk10@gmail.com | +966 570 870 026</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#github">GitHub Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="social-links">
+                <h4>Connect With Me</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/maryamzakmbk" target="_blank" aria-label="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/maryam-al-mobarak-203873233" target="_blank" aria-label="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:marzakmbk10@gmail.com" aria-label="Email">
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Maryam Al Mobarak. All rights reserved.</p>
+            <p class="footer-note">References available upon request</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
